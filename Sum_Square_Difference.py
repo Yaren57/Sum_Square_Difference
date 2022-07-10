@@ -1,15 +1,4 @@
-A = 0
-for i in range(1001):
-    x = pow(i, 2)
-    A = A + x
-print("The sum of the squares of the first ten natural numbers is", A)
+def sum_square_difference(n):
+      return (((n**2) * (n + 1)**2) / 4) - (n * (n + 1) * (2*n + 1) / 6)
 
-b = 0
-for i in range(1001):
-    y = i
-    b = b +y
-B = b*b
-print("The square of the sum of the first ten natural numbers is", B)
-
-sonuc = B - A
-print(sonuc)
+print(sum_square_difference(100))
